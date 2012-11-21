@@ -12,4 +12,4 @@ source $ZSH/oh-my-zsh.sh
 # for Homebrew installed rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 autoload -U colors && colors
-export JAVA_HOME=eval "$(/usr/libexec/java_home)"
+export JAVA_HOME=$(eval /usr/libexec/java_home)
